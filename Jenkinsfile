@@ -18,7 +18,7 @@ pipeline {                                    // 1  // Defines the start of the 
             }                                 // 5  // Ends the steps block for 'build' stage
         }                                     // 4  // Ends the 'build' stage
 
-	Stage("test"){
+	stage("test"){
 	   steps{
 		echo "-------unit test started------"
 		sh 'mvn surefire-report:report'
