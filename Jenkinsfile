@@ -61,6 +61,10 @@ pipeline {                                    // 1  // Defines the start of the 
                     buildInfo.env.collect()
                     server.publishBuildInfo(buildInfo)
                     echo '<--------------- Jar Publish Ended --------------->'
-
+		}
+	    }
+	}
     }                                         // 3  // Ends the stages block
-}                                             // 1  // Ends the pipeline block
+}                                             // 1  // Ends the pipeline bloc
+
+
